@@ -34,8 +34,11 @@ export default function ProductCard({ product }) {
           <img
             src={currentImageIndex === 1 ? secondaryImg : primaryImg}
             alt={product.title}
+            width="400"
+            height="400"
             className="w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-105"
             loading="lazy"
+            decoding="async"
           />
         </a>
 

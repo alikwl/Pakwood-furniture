@@ -83,8 +83,11 @@ export default function RoomCarousel() {
                 <img
                   src={room.image}
                   alt={room.name}
+                  width="600"
+                  height="450"
                   className="w-full h-full object-cover object-center img-zoom-hover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
                 

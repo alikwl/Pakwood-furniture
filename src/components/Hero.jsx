@@ -11,6 +11,9 @@ export default function Hero() {
           src="./images/banners/hero-living-room.webp"
           alt="Pakwood Luxury Living Room in Pakistan"
           className="w-full h-full object-cover object-center opacity-45 scale-105 transition-transform duration-1000 ease-out"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         {/* Editorial Vignette & Warm Tint Gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#181513] via-[#181513]/60 to-transparent" />

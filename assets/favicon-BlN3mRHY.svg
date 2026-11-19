@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C383"/>
+      <stop offset="50%" stop-color="#B08D57"/>
+      <stop offset="100%" stop-color="#8F6E3B"/>
+    </linearGradient>
+    <linearGradient id="favWalnut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5C4033"/>
+      <stop offset="100%" stop-color="#1E1B18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="#181513"/>
+  <rect x="7" y="7" width="50" height="50" rx="10" fill="none" stroke="url(#favGold)" stroke-width="1.5" opacity="0.4"/>
+  
+  <g transform="translate(2, 2)">
+    <rect x="15" y="15" width="30" height="30" rx="2" transform="rotate(45 30 30)" fill="#231F1C" stroke="url(#favGold)" stroke-width="1.75"/>
+    <path d="M 24 20 L 24 40 M 24 20 L 33 20 C 37 20 38 23 38 26 C 38 29 37 32 33 32 L 24 32" fill="none" stroke="#FAF8F5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 28 33 L 31 39 L 34 33 L 37 39" fill="none" stroke="url(#favGold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

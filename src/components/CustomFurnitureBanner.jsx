@@ -33,6 +33,8 @@ export default function CustomFurnitureBanner() {
           src="./images/banners/banner-custom-workshop.webp"
           alt="Pakwood Multan Furniture Workshop"
           className="w-full h-full object-cover object-center"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#181513] via-[#181513]/90 to-[#181513]/80" />
       </div>

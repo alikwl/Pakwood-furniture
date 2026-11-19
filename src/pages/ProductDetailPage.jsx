@@ -126,7 +126,11 @@ export default function ProductDetailPage({ slug }) {
                 <img
                   src={images[activeImageIndex] || images[0]}
                   alt={product.title}
+                  width="700"
+                  height="700"
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  loading="eager"
+                  decoding="async"
                 />
 
                 {/* Badges */}
@@ -161,7 +165,7 @@ export default function ProductDetailPage({ slug }) {
                           : 'border-transparent opacity-60 hover:opacity-100'
                       }`}
                     >
-                      <img src={img} alt={`Angle ${idx + 1}`} className="w-full h-full object-cover" />
+                      <img src={img} alt={`Angle ${idx + 1}`} width="80" height="80" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                     </button>
                   ))}
                 </div>
