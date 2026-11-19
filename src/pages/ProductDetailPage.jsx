@@ -50,8 +50,44 @@ export default function ProductDetailPage({ slug }) {
     }
   };
 
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.title,
+    "image": product.images?.map(img => `https://pakwoodfurniture.store/${img}`),
+    "description": product.shortDescription,
+    "sku": product.id,
+    "brand": {
+      "@type": "Brand",
+      "name": "Pakwood Furniture"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `https://pakwoodfurniture.store/#/product/${product.slug}`,
+      "priceCurrency": "PKR",
+      "price": product.price,
+      "priceValidUntil": "2027-12-31",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Pakwood Furniture"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.rating,
+      "reviewCount": product.reviewCount
+    }
+  };
+
   return (
     <div className="bg-[#FAF8F5] min-h-screen py-8 md:py-14">
+      {/* Product JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Top Breadcrumb & Back Link */}
