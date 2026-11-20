@@ -6,42 +6,42 @@ export default function RoomCarousel() {
     {
       name: 'Living Room',
       count: '10 Signature Pieces',
-      image: './images/banners/banner-sofas.webp',
+      image: '/images/banners/banner-sofas.webp',
       link: '/collections?category=sofas',
       desc: 'Sectional lounges, Turkish velvet tuxedo couches & sculptural bouclé.'
     },
     {
       name: 'Master Bedroom',
       count: '12 Handcrafted Suites',
-      image: './images/banners/banner-beds.webp',
+      image: '/images/banners/banner-beds.webp',
       link: '/collections?category=beds',
       desc: 'Solid Sheesham platform beds, fluted headboards & artisan dressers.'
     },
     {
       name: 'Accent & Lounge Chairs',
       count: '8 Bespoke Chairs',
-      image: './images/banners/banner-chairs.webp',
+      image: '/images/banners/banner-chairs.webp',
       link: '/collections?category=chairs',
       desc: 'Mid-century cane armchairs, 360-degree swivels & leather club seating.'
     },
     {
       name: 'Dining & Entertaining',
       count: '6 Royal Dining Sets',
-      image: './images/banners/banner-dining.webp',
+      image: '/images/banners/banner-dining.webp',
       link: '/collections?category=dining',
       desc: 'Thick solid Sheesham tables, butterfly extensions & carver chairs.'
     },
     {
       name: 'Executive Office',
       count: '6 Workstations & Desks',
-      image: './images/banners/banner-office.webp',
+      image: '/images/banners/banner-office.webp',
       link: '/collections?category=office',
       desc: 'Director desks with cable management, filing credenzas & bookcases.'
     },
     {
       name: 'English Chesterfield',
       count: 'Tufted Icons',
-      image: './images/banners/banner-custom-workshop.webp',
+      image: '/images/banners/banner-custom-workshop.webp',
       link: '/collections?room=Chesterfield',
       desc: 'Authentic deep-button tufting, brass studs & waxed leatherite.'
     }

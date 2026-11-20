@@ -91,7 +91,7 @@ export default function Header({ currentPath = '' }) {
           {/* Logo */}
           <a href="/" className="flex items-center focus:outline-none">
             <img
-              src="./pakwood-logo.svg"
+              src="/pakwood-logo.svg"
               alt="Pakwood Furniture Multan"
               className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-[1.02]"
             />
@@ -206,7 +206,7 @@ export default function Header({ currentPath = '' }) {
           <div className="relative w-4/5 max-w-sm bg-[#FAF8F5] h-full shadow-2xl flex flex-col z-10 border-r border-[#E8E2D9]">
             {/* Drawer Header */}
             <div className="p-4 border-b border-[#E8E2D9] flex items-center justify-between bg-white">
-              <img src="./pakwood-logo.svg" alt="Pakwood" className="h-9 w-auto" />
+              <img src="/pakwood-logo.svg" alt="Pakwood" className="h-9 w-auto" />
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 text-[#7A7570] hover:text-[#1E1B18]"

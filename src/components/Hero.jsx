@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Hero Image with Deep Contrast Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="./images/banners/hero-living-room.webp"
+          src="/images/banners/hero-living-room.webp"
           alt="Pakwood Luxury Living Room in Pakistan"
           className="w-full h-full object-cover object-center opacity-45 scale-105 transition-transform duration-1000 ease-out"
           fetchPriority="high"

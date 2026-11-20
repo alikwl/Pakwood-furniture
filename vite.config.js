@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Ensures relative assets work on any GitHub Pages subpath or custom domain
+  base: '/', // Root-relative paths for custom domain pakwoodfurniture.store
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

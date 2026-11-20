@@ -30,7 +30,7 @@ export default function CustomFurnitureBanner() {
       {/* Background Graphic Elements */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <img
-          src="./images/banners/banner-custom-workshop.webp"
+          src="/images/banners/banner-custom-workshop.webp"
           alt="Pakwood Multan Furniture Workshop"
           className="w-full h-full object-cover object-center"
           loading="lazy"

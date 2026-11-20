@@ -11,7 +11,7 @@ export default function ProductCard({ product }) {
 
   const isSaved = isInWishlist(product.id);
   const images = product.images || [];
-  const primaryImg = images[0] || './images/banners/banner-sofas.webp';
+  const primaryImg = images[0] || '/images/banners/banner-sofas.webp';
   const secondaryImg = images[1] || primaryImg;
 
   // Calculate discount percentage

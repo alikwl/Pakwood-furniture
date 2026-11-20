@@ -33,7 +33,7 @@ export default function AboutPage() {
 
           <div className="lg:col-span-5 rounded-2xl overflow-hidden aspect-square bg-[#EAE5DC] border border-[#E8E2D9]">
             <img
-              src="./images/banners/banner-custom-workshop.webp"
+              src="/images/banners/banner-custom-workshop.webp"
               alt="Pakwood Multan Craftsman"
               className="w-full h-full object-cover object-center"
             />

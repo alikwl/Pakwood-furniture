@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-5">
             <a href="/" className="inline-block">
               <img
-                src="./pakwood-logo-dark.svg"
+                src="/pakwood-logo-dark.svg"
                 alt="Pakwood Furniture Multan"
                 className="h-11 w-auto"
               />
