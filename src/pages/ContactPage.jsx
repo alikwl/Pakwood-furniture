@@ -21,7 +21,7 @@ export default function ContactPage() {
         
         {/* Breadcrumb */}
         <div className="flex items-center space-x-2 text-xs text-[#7A7570] mb-6">
-          <a href="#/" className="hover:text-[#B08D57] transition-colors">Home</a>
+          <a href="/" className="hover:text-[#B08D57] transition-colors">Home</a>
           <span>/</span>
           <span className="text-[#1E1B18] font-medium">Contact & Multan Showroom</span>
         </div>

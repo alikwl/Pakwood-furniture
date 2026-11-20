@@ -66,7 +66,7 @@ export default function CuratedGrids() {
         {/* Bottom Explore Button */}
         <div className="mt-12 text-center">
           <a
-            href={`#/collections?category=${activeTab}`}
+            href={`/collections?category=${activeTab}`}
             className="inline-flex items-center space-x-2 bg-[#FAF8F5] hover:bg-[#EAE5DC] text-[#1E1B18] border border-[#E8E2D9] px-8 py-3.5 rounded-full font-semibold text-xs md:text-sm tracking-wide transition-all shadow-subtle hover:shadow-elevated btn-press"
           >
             <span>View All {tabs.find(t => t.id === activeTab)?.label}</span>

@@ -44,7 +44,7 @@ export default function Hero() {
             
             {/* Explore Collection Button */}
             <a
-              href="#/collections"
+              href="/collections"
               className="inline-flex items-center justify-center space-x-2.5 bg-[#FAF8F5] text-[#181513] hover:bg-[#E5C383] px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide transition-all shadow-elevated btn-press"
             >
               <span>Explore Collections</span>

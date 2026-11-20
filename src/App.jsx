@@ -15,24 +15,70 @@ import CustomOrderPage from './pages/CustomOrderPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
+function getCleanPath() {
+  // If user arrives via legacy hash (e.g. #/collections or #/product/...)
+  if (window.location.hash && window.location.hash.startsWith('#/')) {
+    const clean = window.location.hash.slice(1);
+    window.history.replaceState(null, '', clean);
+    return clean;
+  }
+  return window.location.pathname + window.location.search;
+}
+
 export default function App() {
-  const [currentHash, setCurrentHash] = useState(() => window.location.hash || '#/');
+  const [currentPath, setCurrentPath] = useState(getCleanPath);
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentHash(window.location.hash || '#/');
+    // Listen for browser back / forward buttons
+    const handlePopState = () => {
+      setCurrentPath(getCleanPath());
       window.scrollTo(0, 0);
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    // Global internal link interceptor for seamless SPA routing without #
+    const handleLinkClick = (e) => {
+      const anchor = e.target.closest('a');
+      if (!anchor) return;
+      const href = anchor.getAttribute('href');
+      if (!href) return;
+
+      // Ignore external URLs, tel, mailto, whatsapp, target="_blank", or modifier keys
+      if (
+        href.startsWith('http://') ||
+        href.startsWith('https://') ||
+        href.startsWith('//') ||
+        href.startsWith('tel:') ||
+        href.startsWith('mailto:') ||
+        anchor.target === '_blank' ||
+        e.metaKey || e.ctrlKey || e.shiftKey || e.altKey
+      ) {
+        return;
+      }
+
+      // Check if it's an internal application route
+      if (href.startsWith('/') || href.startsWith('#/')) {
+        e.preventDefault();
+        const cleanHref = href.startsWith('#/') ? href.slice(1) : href;
+        if (cleanHref !== window.location.pathname + window.location.search) {
+          window.history.pushState(null, '', cleanHref);
+          setCurrentPath(cleanHref);
+          window.scrollTo(0, 0);
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    document.addEventListener('click', handleLinkClick);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      document.removeEventListener('click', handleLinkClick);
+    };
   }, []);
 
-  // Simple, robust Hash Router
+  // HTML5 History API Path Router
   const renderCurrentPage = () => {
-    // Strip query parameters for routing path matching
-    const rawPath = currentHash.replace(/^#/, '');
-    const pathWithoutQuery = rawPath.split('?')[0] || '/';
+    const pathWithoutQuery = (currentPath.split('?')[0] || '/').toLowerCase();
 
     if (pathWithoutQuery === '/' || pathWithoutQuery === '') {
       return <HomePage />;
@@ -41,7 +87,9 @@ export default function App() {
       return <CollectionPage />;
     }
     if (pathWithoutQuery.startsWith('/product/')) {
-      const slug = pathWithoutQuery.replace('/product/', '').trim();
+      // Preserve exact case for product slug
+      const originalPath = currentPath.split('?')[0] || '';
+      const slug = originalPath.replace(/^\/product\//i, '').trim();
       return <ProductDetailPage slug={slug} />;
     }
     if (pathWithoutQuery.startsWith('/custom-orders')) {
@@ -61,7 +109,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF8F5] text-[#1E1B18] font-sans antialiased">
       {/* Header */}
-      <Header currentPath={currentHash} />
+      <Header currentPath={currentPath} />
 
       {/* Main Page Content */}
       <main className="flex-1">

@@ -124,7 +124,7 @@ export default function SearchModal() {
               {results.slice(0, 12).map((item) => (
                 <a
                   key={item.id}
-                  href={`#/product/${item.slug}`}
+                  href={`/product/${item.slug}`}
                   onClick={() => setIsSearchOpen(false)}
                   className="flex items-center space-x-3 p-3 bg-white rounded-xl border border-[#E8E2D9] hover:border-[#B08D57] hover:shadow-subtle transition-all group"
                 >

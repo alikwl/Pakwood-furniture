@@ -18,28 +18,28 @@ export default function Header({ currentPath = '' }) {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#/' },
+    { name: 'Home', href: '/' },
     {
       name: 'Shop Catalog',
-      href: '#/collections',
+      href: '/collections',
       hasDropdown: true,
       items: [
-        { label: 'All Collections', href: '#/collections' },
-        { label: 'Sofas & Sectionals', href: '#/collections?category=sofas' },
-        { label: 'Luxury Bed Sets', href: '#/collections?category=beds' },
-        { label: 'Accent & Cane Chairs', href: '#/collections?category=chairs' },
-        { label: 'Dining Sets & Tables', href: '#/collections?category=dining' },
-        { label: 'Executive Office Desks', href: '#/collections?category=office' },
+        { label: 'All Collections', href: '/collections' },
+        { label: 'Sofas & Sectionals', href: '/collections?category=sofas' },
+        { label: 'Luxury Bed Sets', href: '/collections?category=beds' },
+        { label: 'Accent & Cane Chairs', href: '/collections?category=chairs' },
+        { label: 'Dining Sets & Tables', href: '/collections?category=dining' },
+        { label: 'Executive Office Desks', href: '/collections?category=office' },
       ]
     },
-    { name: 'Sofas', href: '#/collections?category=sofas' },
-    { name: 'Bedroom', href: '#/collections?category=beds' },
-    { name: 'Chairs', href: '#/collections?category=chairs' },
-    { name: 'Dining', href: '#/collections?category=dining' },
-    { name: 'Office', href: '#/collections?category=office' },
-    { name: 'Custom Order', href: '#/custom-orders' },
-    { name: 'Our Craft', href: '#/about' },
-    { name: 'Contact', href: '#/contact' },
+    { name: 'Sofas', href: '/collections?category=sofas' },
+    { name: 'Bedroom', href: '/collections?category=beds' },
+    { name: 'Chairs', href: '/collections?category=chairs' },
+    { name: 'Dining', href: '/collections?category=dining' },
+    { name: 'Office', href: '/collections?category=office' },
+    { name: 'Custom Order', href: '/custom-orders' },
+    { name: 'Our Craft', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -89,7 +89,7 @@ export default function Header({ currentPath = '' }) {
           </button>
 
           {/* Logo */}
-          <a href="#/" className="flex items-center focus:outline-none">
+          <a href="/" className="flex items-center focus:outline-none">
             <img
               src="./pakwood-logo.svg"
               alt="Pakwood Furniture Multan"
@@ -234,7 +234,7 @@ export default function Header({ currentPath = '' }) {
 
               <div className="pt-4 border-t border-[#E8E2D9] mt-4 space-y-3">
                 <a
-                  href="#/custom-orders"
+                  href="/custom-orders"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block px-3 py-2 text-xs font-semibold text-[#5C4033] bg-[#EAE5DC]/60 rounded-md"
                 >

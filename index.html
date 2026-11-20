@@ -12,6 +12,34 @@
     <meta name="keywords" content="Pakwood furniture, furniture Multan, Sheesham wood bed, Mughlai bed, velvet sofa Pakistan, cane armchair, office desk Multan, modern furniture Lahore Karachi Islamabad, pakwoodfurniture.store" />
     <meta name="author" content="Pakwood Furniture" />
     <meta name="robots" content="index, follow" />
+
+    <!-- GitHub Pages Single Page Apps (SPA) Router Script -->
+    <script type="text/javascript">
+      // Checks if a redirect from 404.html is present in the URL query string
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        } else if (l.search.indexOf('?p=/') !== -1 || l.search.indexOf('&p=/') !== -1) {
+          var match = l.search.match(/[?&]p=\/([^&]*)/);
+          if (match) {
+            var path = '/' + decodeURIComponent(match[1]).replace(/~and~/g, '&');
+            var qMatch = l.search.match(/[?&]q=([^&]*)/);
+            var query = qMatch ? '?' + decodeURIComponent(qMatch[1]).replace(/~and~/g, '&') : '';
+            window.history.replaceState(null, null, path + query + l.hash);
+          }
+        }
+        // Normalize any old hash URLs (e.g. #/collections -> /collections)
+        if (l.hash && l.hash.startsWith('#/')) {
+          var clean = l.hash.replace(/^#/, '');
+          window.history.replaceState(null, null, clean);
+        }
+      }(window.location));
+    </script>
     
     <!-- Open Graph / Facebook & WhatsApp Preview -->
     <meta property="og:type" content="website" />
@@ -86,7 +114,7 @@
           },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://pakwoodfurniture.store/#/collections?search={search_term_string}",
+            "target": "https://pakwoodfurniture.store/collections?search={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         }

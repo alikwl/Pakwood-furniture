@@ -7,42 +7,42 @@ export default function RoomCarousel() {
       name: 'Living Room',
       count: '10 Signature Pieces',
       image: './images/banners/banner-sofas.webp',
-      link: '#/collections?category=sofas',
+      link: '/collections?category=sofas',
       desc: 'Sectional lounges, Turkish velvet tuxedo couches & sculptural bouclé.'
     },
     {
       name: 'Master Bedroom',
       count: '12 Handcrafted Suites',
       image: './images/banners/banner-beds.webp',
-      link: '#/collections?category=beds',
+      link: '/collections?category=beds',
       desc: 'Solid Sheesham platform beds, fluted headboards & artisan dressers.'
     },
     {
       name: 'Accent & Lounge Chairs',
       count: '8 Bespoke Chairs',
       image: './images/banners/banner-chairs.webp',
-      link: '#/collections?category=chairs',
+      link: '/collections?category=chairs',
       desc: 'Mid-century cane armchairs, 360-degree swivels & leather club seating.'
     },
     {
       name: 'Dining & Entertaining',
       count: '6 Royal Dining Sets',
       image: './images/banners/banner-dining.webp',
-      link: '#/collections?category=dining',
+      link: '/collections?category=dining',
       desc: 'Thick solid Sheesham tables, butterfly extensions & carver chairs.'
     },
     {
       name: 'Executive Office',
       count: '6 Workstations & Desks',
       image: './images/banners/banner-office.webp',
-      link: '#/collections?category=office',
+      link: '/collections?category=office',
       desc: 'Director desks with cable management, filing credenzas & bookcases.'
     },
     {
       name: 'English Chesterfield',
       count: 'Tufted Icons',
       image: './images/banners/banner-custom-workshop.webp',
-      link: '#/collections?room=Chesterfield',
+      link: '/collections?room=Chesterfield',
       desc: 'Authentic deep-button tufting, brass studs & waxed leatherite.'
     }
   ];
@@ -62,7 +62,7 @@ export default function RoomCarousel() {
             </h2>
           </div>
           <a
-            href="#/collections"
+            href="/collections"
             className="mt-4 md:mt-0 inline-flex items-center space-x-1.5 text-xs md:text-sm font-semibold text-[#8B5A2B] hover:text-[#5C4033] transition-colors"
           >
             <span>View All Categories</span>

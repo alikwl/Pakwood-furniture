@@ -191,7 +191,7 @@ export default function QuickViewModal() {
               </button>
 
               <a
-                href={`#/product/${quickViewProduct.slug}`}
+                href={`/product/${quickViewProduct.slug}`}
                 onClick={() => setQuickViewProduct(null)}
                 className="flex-1 py-2.5 px-4 rounded-xl border border-[#E8E2D9] text-[#1E1B18] hover:border-[#1E1B18] text-xs font-semibold flex items-center justify-center space-x-1 transition-colors"
               >

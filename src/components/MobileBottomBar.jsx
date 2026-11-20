@@ -9,7 +9,7 @@ export default function MobileBottomBar() {
   return (
     <aside aria-label="Quick Actions" className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#E8E2D9] px-3 py-2 flex items-center justify-around shadow-modal">
       <a
-        href="#/"
+        href="/"
         className="flex flex-col items-center justify-center text-[#7A7570] hover:text-[#B08D57] transition-colors py-1 px-2"
       >
         <Home className="w-5 h-5" />
@@ -17,7 +17,7 @@ export default function MobileBottomBar() {
       </a>
 
       <a
-        href="#/collections"
+        href="/collections"
         className="flex flex-col items-center justify-center text-[#7A7570] hover:text-[#B08D57] transition-colors py-1 px-2"
       >
         <Grid className="w-5 h-5" />

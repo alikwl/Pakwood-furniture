@@ -85,7 +85,7 @@ export default function WishlistDrawer() {
                 />
                 <div className="flex-1 min-w-0">
                   <a
-                    href={`#/product/${item.slug}`}
+                    href={`/product/${item.slug}`}
                     onClick={() => setIsDrawerOpen(false)}
                     className="block text-xs font-bold text-[#1E1B18] hover:text-[#B08D57] transition-colors truncate"
                   >

@@ -30,7 +30,7 @@ export default function ProductCard({ product }) {
         }}
         onMouseLeave={() => setCurrentImageIndex(0)}
       >
-        <a href={`#/product/${product.slug}`} className="block w-full h-full">
+        <a href={`/product/${product.slug}`} className="block w-full h-full">
           <img
             src={currentImageIndex === 1 ? secondaryImg : primaryImg}
             alt={product.title}
@@ -126,7 +126,7 @@ export default function ProductCard({ product }) {
 
           {/* Title */}
           <a
-            href={`#/product/${product.slug}`}
+            href={`/product/${product.slug}`}
             className="block font-serif text-lg md:text-xl font-bold text-[#1E1B18] hover:text-[#B08D57] transition-colors leading-snug line-clamp-2"
           >
             {product.title}

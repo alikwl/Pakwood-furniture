@@ -5,11 +5,11 @@ import productsData from '../data/products.json';
 import { formatPKR } from '../utils/whatsapp';
 
 export default function CollectionPage() {
-  // Parse hash query params (e.g. #/collections?category=sofas&room=Living)
+  // Parse clean URL query params (e.g. /collections?category=sofas&room=Living)
   const getInitialParams = () => {
-    const hash = window.location.hash || '';
-    const queryPart = hash.includes('?') ? hash.split('?')[1] : '';
-    const params = new URLSearchParams(queryPart);
+    const searchPart = window.location.search ? window.location.search.slice(1) : '';
+    const hashPart = window.location.hash.includes('?') ? window.location.hash.split('?')[1] : '';
+    const params = new URLSearchParams(searchPart || hashPart);
     return {
       category: params.get('category') || 'all',
       room: params.get('room') || 'all',
@@ -25,15 +25,19 @@ export default function CollectionPage() {
   const [sortBy, setSortBy] = useState(initial.sort);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 
-  // Sync with hash changes
+  // Sync with clean URL & popstate changes
   useEffect(() => {
-    const handleHashChange = () => {
+    const handleUrlChange = () => {
       const p = getInitialParams();
       setSelectedCategory(p.category);
       setSelectedRoom(p.room);
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleUrlChange);
+    window.addEventListener('hashchange', handleUrlChange);
+    return () => {
+      window.removeEventListener('popstate', handleUrlChange);
+      window.removeEventListener('hashchange', handleUrlChange);
+    };
   }, []);
 
   // Filter logic
@@ -101,7 +105,10 @@ export default function CollectionPage() {
     setSelectedMaterial('all');
     setMaxPrice(265000);
     setSortBy('featured');
-    window.location.hash = '#/collections';
+    if (window.location.search || window.location.hash) {
+      window.history.pushState(null, '', '/collections');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }
   };
 
   const hasActiveFilters = selectedCategory !== 'all' || selectedRoom !== 'all' || selectedMaterial !== 'all' || maxPrice < 265000;
@@ -112,7 +119,7 @@ export default function CollectionPage() {
         
         {/* Breadcrumb Navigation */}
         <div className="flex items-center space-x-2 text-xs text-[#7A7570] mb-4">
-          <a href="#/" className="hover:text-[#B08D57] transition-colors">Home</a>
+          <a href="/" className="hover:text-[#B08D57] transition-colors">Home</a>
           <span>/</span>
           <span className="text-[#1E1B18] font-medium">Collections</span>
           {selectedCategory !== 'all' && (

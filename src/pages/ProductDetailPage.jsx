@@ -63,7 +63,7 @@ export default function ProductDetailPage({ slug }) {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://pakwoodfurniture.store/#/product/${product.slug}`,
+      "url": `https://pakwoodfurniture.store/product/${product.slug}`,
       "priceCurrency": "PKR",
       "price": product.price,
       "priceValidUntil": "2027-12-31",
@@ -93,9 +93,9 @@ export default function ProductDetailPage({ slug }) {
         {/* Top Breadcrumb & Back Link */}
         <div className="flex items-center justify-between text-xs text-[#7A7570] mb-6">
           <div className="flex items-center space-x-2">
-            <a href="#/" className="hover:text-[#B08D57] transition-colors">Home</a>
+            <a href="/" className="hover:text-[#B08D57] transition-colors">Home</a>
             <span>/</span>
-            <a href={`#/collections?category=${product.category}`} className="hover:text-[#B08D57] transition-colors capitalize">
+            <a href={`/collections?category=${product.category}`} className="hover:text-[#B08D57] transition-colors capitalize">
               {product.category}
             </a>
             <span>/</span>
@@ -105,7 +105,7 @@ export default function ProductDetailPage({ slug }) {
           </div>
 
           <a
-            href="#/collections"
+            href="/collections"
             className="inline-flex items-center space-x-1 text-[#8B5A2B] hover:text-[#5C4033] font-semibold"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
@@ -392,7 +392,7 @@ export default function ProductDetailPage({ slug }) {
                 Complementary Pieces in {product.category}
               </h3>
               <a
-                href={`#/collections?category=${product.category}`}
+                href={`/collections?category=${product.category}`}
                 className="text-xs font-semibold text-[#8B5A2B] hover:underline"
               >
                 View all {product.category} →

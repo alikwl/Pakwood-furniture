@@ -12,7 +12,7 @@ export default function Footer() {
           
           {/* Brand Info (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-5">
-            <a href="#/" className="inline-block">
+            <a href="/" className="inline-block">
               <img
                 src="./pakwood-logo-dark.svg"
                 alt="Pakwood Furniture Multan"
@@ -55,12 +55,12 @@ export default function Footer() {
               Collections
             </h4>
             <ul className="space-y-2 text-xs text-[#A8A39D]">
-              <li><a href="#/collections?category=sofas" className="hover:text-white transition-colors">Sofas & Lounges</a></li>
-              <li><a href="#/collections?category=beds" className="hover:text-white transition-colors">Luxury Bed Sets</a></li>
-              <li><a href="#/collections?category=chairs" className="hover:text-white transition-colors">Accent & Cane Chairs</a></li>
-              <li><a href="#/collections?category=dining" className="hover:text-white transition-colors">Dining Tables & Suites</a></li>
-              <li><a href="#/collections?category=office" className="hover:text-white transition-colors">Executive Office Desks</a></li>
-              <li><a href="#/collections?room=Chesterfield" className="hover:text-white transition-colors">Chesterfield Leather</a></li>
+              <li><a href="/collections?category=sofas" className="hover:text-white transition-colors">Sofas & Lounges</a></li>
+              <li><a href="/collections?category=beds" className="hover:text-white transition-colors">Luxury Bed Sets</a></li>
+              <li><a href="/collections?category=chairs" className="hover:text-white transition-colors">Accent & Cane Chairs</a></li>
+              <li><a href="/collections?category=dining" className="hover:text-white transition-colors">Dining Tables & Suites</a></li>
+              <li><a href="/collections?category=office" className="hover:text-white transition-colors">Executive Office Desks</a></li>
+              <li><a href="/collections?room=Chesterfield" className="hover:text-white transition-colors">Chesterfield Leather</a></li>
             </ul>
           </div>
 
@@ -70,9 +70,9 @@ export default function Footer() {
               Patron Care
             </h4>
             <ul className="space-y-2 text-xs text-[#A8A39D]">
-              <li><a href="#/custom-orders" className="hover:text-white transition-colors">Custom Room Sizing</a></li>
-              <li><a href="#/about" className="hover:text-white transition-colors">Multan Timber Seasoning</a></li>
-              <li><a href="#/contact" className="hover:text-white transition-colors">Visit Multan Workshop</a></li>
+              <li><a href="/custom-orders" className="hover:text-white transition-colors">Custom Room Sizing</a></li>
+              <li><a href="/about" className="hover:text-white transition-colors">Multan Timber Seasoning</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Visit Multan Workshop</a></li>
               <li><a href={getWhatsAppLink({ type: 'inquiry' })} target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors">Request Fabric Swatches</a></li>
               <li><span className="text-[#A8A39D]">70% Advance / 30% on Dispatch</span></li>
               <li><span className="text-[#A8A39D]">10-Year Frame Warranty</span></li>
