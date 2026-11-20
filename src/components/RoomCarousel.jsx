@@ -12,7 +12,7 @@ export default function RoomCarousel() {
     },
     {
       name: 'Master Bedroom',
-      count: '10 Handcrafted Suites',
+      count: '11 Handcrafted Suites',
       image: './images/banners/banner-beds.webp',
       link: '#/collections?category=beds',
       desc: 'Solid Sheesham platform beds, fluted headboards & artisan dressers.'

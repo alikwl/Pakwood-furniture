@@ -585,6 +585,65 @@
     "fullDescription": "The Pakwood Artisan Sheesham Daybed & Chaise Lounge represents the pinnacle of Multani bespoke furniture craft. Constructed from seasoned Multani Sheesham and solid kiln-dried Kikar hardwood, every structural angle is reinforced with traditional mortise-and-tenon joints to guarantee decades of wobble-free service. Upholstered in textured cotton-linen canvas with master moltyfoam 4-inch firm mattress core + 2 round bolsters, it provides an uncompromising balance of ergonomic posture support and plush luxury. Backed by Pakwood Furniture's 10-Year Wood Warranty with nationwide white-glove delivery across Pakistan."
   },
   {
+    "id": "PKW-BED-041",
+    "slug": "mughlai-solid-sheesham-king-bed",
+    "title": "Pakwood Mughlai Handcrafted Sheesham & Cane King Bed",
+    "category": "beds",
+    "subcategory": "King Bed Sets",
+    "room": "Bedroom",
+    "price": 120000,
+    "compareAtPrice": 145000,
+    "rating": 4.9,
+    "reviewCount": 24,
+    "isBestSeller": true,
+    "isNew": true,
+    "inStock": true,
+    "dimensions": {
+      "length": 84,
+      "depth": 78,
+      "height": 56,
+      "unit": "inches (King Size - Fits Standard 72\" x 78\" Mattress)"
+    },
+    "materials": {
+      "woodFrame": "100% Solid Seasoned Multani Sheesham (Indian Rosewood)",
+      "upholstery": "Authentic Handwoven Natural Rattan Cane (Baint) Mesh Panels",
+      "cushioning": "Kiln-Dried Solid Hardwood Ribbed Mattress Slat Base",
+      "warranty": "10-Year Structural Timber & Termite Resistance Warranty"
+    },
+    "leadTime": "10-14 Working Days (Handcrafted in Multan Workshop)",
+    "swatches": [
+      {
+        "name": "Natural Warm Honey Sheesham (As Featured)",
+        "hex": "#8B5A2B"
+      },
+      {
+        "name": "Royal Dark Walnut Sheesham",
+        "hex": "#4A3324"
+      },
+      {
+        "name": "Antique Amber Teak Finish",
+        "hex": "#6B4423"
+      }
+    ],
+    "features": [
+      "Traditional hand-turned architectural posts with regal Mughal finial crowns on headboard & footboard",
+      "Authentic breathable handwoven natural rattan cane (baint) mesh panels in symmetric triple-bay frames",
+      "100% Solid Seasoned Multani Sheesham timber, kiln-dried and chemically treated against termites & borers",
+      "Heavy-duty center spine beam with 4 solid vertical support pillars to guarantee zero mattress sagging or creaking",
+      "Organic hand-rubbed matte protective lacquer accentuating vibrant, authentic rosewood grain patterns",
+      "Standard King package includes headboard, footboard, side rails, and reinforced solid wood slat foundation",
+      "Matching custom handcrafted Sheesham & cane bedside nightstands and dressers available upon inquiry"
+    ],
+    "images": [
+      "images/beds/pakwood-mughlai-solid-sheesham-king-bed-01.webp",
+      "images/beds/pakwood-mughlai-solid-sheesham-king-bed-02.webp",
+      "images/beds/pakwood-mughlai-solid-sheesham-king-bed-03.webp"
+    ],
+    "whatsappUrl": "https://wa.me/923217324620?text=Salam%20Pakwood%20Furniture%20Multan%21%20I%20am%20inquiring%20about%20the%20%2APakwood%20Mughlai%20Handcrafted%20Sheesham%20%26%20Cane%20King%20Bed%2A%20%28SKU%3A%20PKW-BED-041%2C%20Price%3A%20%E2%82%A8%20120%2C000%29.%20Please%20share%20wood%20finish%20swatches%2C%20mattress%20sizing%20confirmation%2C%20and%20delivery%20details%20to%20my%20city.",
+    "shortDescription": "Handcrafted in Multan from 100% solid seasoned Multani Sheesham with natural handwoven cane mesh. Features regal turned posts, termite protection, and Pakwood's 10-Year Timber Warranty.",
+    "fullDescription": "The Pakwood Mughlai Handcrafted Sheesham & Cane King Bed seamlessly bridges the regal grandeur of Mughal architectural craft with the serene warmth of contemporary organic minimalism. Every curve, rail, and post is precision-shaped from 100% seasoned solid Multani Sheesham (Rosewood), celebrated globally for its high timber density, expressive grain figuring, and lifelong resilience. The statement headboard and matching footboard showcase three symmetrical inset panels of authentic handwoven natural rattan cane mesh (baint), providing an airy, breathable aesthetic that stays cool in summer and visually elevates any master bedroom. Hand-turned corner posts culminate in elegant finials, anchored by traditional mortise-and-tenon structural joints and a heavy-duty timber slat foundation tested to comfortably hold over 500 kg without a single sound or deflection. Coated in a low-sheen, non-toxic matte lacquer that seals the wood while allowing the natural Sheesham oils and character to shine. Backed by Pakwood's 10-Year Structural Timber & Termite Warranty with white-glove doorstep delivery across Pakistan."
+  },
+  {
     "id": "PKW-BED-011",
     "slug": "varello-extended-king-bed-set",
     "title": "Pakwood Varello Grand Extended King Bed Set",
