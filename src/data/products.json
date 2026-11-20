@@ -644,6 +644,66 @@
     "fullDescription": "The Pakwood Mughlai Handcrafted Sheesham & Cane King Bed seamlessly bridges the regal grandeur of Mughal architectural craft with the serene warmth of contemporary organic minimalism. Every curve, rail, and post is precision-shaped from 100% seasoned solid Multani Sheesham (Rosewood), celebrated globally for its high timber density, expressive grain figuring, and lifelong resilience. The statement headboard and matching footboard showcase three symmetrical inset panels of authentic handwoven natural rattan cane mesh (baint), providing an airy, breathable aesthetic that stays cool in summer and visually elevates any master bedroom. Hand-turned corner posts culminate in elegant finials, anchored by traditional mortise-and-tenon structural joints and a heavy-duty timber slat foundation tested to comfortably hold over 500 kg without a single sound or deflection. Coated in a low-sheen, non-toxic matte lacquer that seals the wood while allowing the natural Sheesham oils and character to shine. Backed by Pakwood's 10-Year Structural Timber & Termite Warranty with white-glove doorstep delivery across Pakistan."
   },
   {
+    "id": "PKW-BED-042",
+    "slug": "arched-heritage-sheesham-cane-king-bed",
+    "title": "Pakwood Arched Heritage Sheesham & Cane King Bed",
+    "category": "beds",
+    "subcategory": "King Bed Sets",
+    "room": "Bedroom",
+    "price": 95000,
+    "compareAtPrice": 118000,
+    "rating": 4.9,
+    "reviewCount": 19,
+    "isBestSeller": true,
+    "isNew": true,
+    "inStock": true,
+    "dimensions": {
+      "length": 84,
+      "depth": 76,
+      "height": 52,
+      "unit": "inches (King Size - Fits Standard 72\" x 78\" Mattress)"
+    },
+    "materials": {
+      "woodFrame": "100% Solid Seasoned Multani Sheesham (Indian Rosewood)",
+      "upholstery": "Continuous Handwoven Natural Rattan Cane (Baint) Mesh Panels",
+      "cushioning": "Solid Hardwood Interlocking Mattress Slat Support Base",
+      "warranty": "10-Year Structural Timber & Termite Resistance Warranty"
+    },
+    "leadTime": "10-14 Working Days (Handcrafted in Multan Workshop)",
+    "swatches": [
+      {
+        "name": "Warm Honey Sheesham (As Featured)",
+        "hex": "#8B5A2B"
+      },
+      {
+        "name": "Classic Walnut Sheesham",
+        "hex": "#4A3324"
+      },
+      {
+        "name": "Vintage Amber Sheesham",
+        "hex": "#6B4423"
+      }
+    ],
+    "features": [
+      "Graceful arched headboard and matching arched footboard with sculpted solid Sheesham timber contour moulding",
+      "Continuous handwoven natural rattan cane (baint) mesh infill panel providing airy ventilation and organic elegance",
+      "100% Solid Seasoned Multani Sheesham (Rosewood) frame with traditional mortise-and-tenon interlocking joinery",
+      "Architectural turned corner posts with spherical finials and fluted foot detailing",
+      "Heavy-duty solid wood longitudinal spine beam with 4 vertical support pillars ensuring lifetime zero-sag mattress support",
+      "Termite, borer, and moisture protective treatment with hand-rubbed low-sheen satin lacquer finish",
+      "Matching custom Sheesham & cane bedside nightstands and dressers available on custom order"
+    ],
+    "images": [
+      "images/beds/pakwood-arched-sheesham-cane-king-bed-01.webp",
+      "images/beds/pakwood-arched-sheesham-cane-king-bed-02.webp",
+      "images/beds/pakwood-arched-sheesham-cane-king-bed-03.webp",
+      "images/beds/pakwood-arched-sheesham-cane-king-bed-04.webp"
+    ],
+    "whatsappUrl": "https://wa.me/923217324620?text=Salam%20Pakwood%20Furniture%20Multan%21%20I%20am%20inquiring%20about%20the%20%2APakwood%20Arched%20Heritage%20Sheesham%20%26%20Cane%20King%20Bed%2A%20%28SKU%3A%20PKW-BED-042%2C%20Price%3A%20%E2%82%A8%2095%2C000%29.%20Please%20share%20wood%20finish%20swatches%2C%20mattress%20sizing%2C%20and%20delivery%20details%20to%20my%20city.",
+    "shortDescription": "Handcrafted in Multan from 100% solid seasoned Multani Sheesham wood with arched natural rattan cane mesh. Features turned finial posts, termite protection, and Pakwood's 10-Year Warranty.",
+    "fullDescription": "The Pakwood Arched Heritage Sheesham & Cane King Bed brings soft, organic architectural curves and vintage botanical elegance into the contemporary master bedroom. Carved by master artisans in Multan from 100% kiln-dried, seasoned Solid Sheesham (Rosewood), this bed features an arched crest rail on both the grand headboard and low-profile footboard. Embedded within each arch is a single unbroken panel of premium natural handwoven rattan cane (baint), allowing refreshing airflow while bringing natural textural warmth to your space. The frame is supported by solid turned corner posts topped with spherical finials and grounded with fluted feet. Engineered with a heavy-duty internal center spine and multi-pillar slat foundation, this bed provides rock-solid structural stability for heavy pocket spring, memory foam, or orthopaedic mattresses without creaking. Sealed with an organic hand-rubbed matte protective coat that highlights the natural golden-brown rosewood grain. Covered by Pakwood Furniture's 10-Year Structural Timber & Termite Warranty with direct white-glove delivery across Pakistan."
+  },
+  {
     "id": "PKW-BED-011",
     "slug": "varello-extended-king-bed-set",
     "title": "Pakwood Varello Grand Extended King Bed Set",
